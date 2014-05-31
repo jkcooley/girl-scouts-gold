@@ -3,8 +3,14 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-	this.route('projects');
-	this.route('project', {path: '/projects/:post_id'});
+	this.resource('admin', function(){
+		this.route('projects');
+		this.route('project', {path: '/projects/:post_id'});
+	});
+
+	this.resource('user', function(){
+		
+	});
 });
 
 export default Router;
