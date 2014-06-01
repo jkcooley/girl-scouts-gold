@@ -1,63 +1,39 @@
 <div class="ui feed segment">
   <h2 class="ui header">Recent Activity</h2>
 
-  <div class="event">
-    <div class="label">
-      <img src="http://placehold.it/45x45">
-    </div>
-    <div class="content">
-      <div class="date">
-        Yesterday
+  {{#each model}}
+    <div class="event">
+      <div class="label">
+        <img src="http://placehold.it/45x45">
       </div>
-      <div class="summary">
-         <a>Margaret</a> created a new proposal
-      </div>
-    </div>
-  </div>
-
-  <div class="event">
-    <div class="label">
-      <img src="http://placehold.it/45x45">
-    </div>
-    <div class="content">
-      <div class="date">
-        Two days ago
-      </div>
-      <div class="summary">
-         <a>Jennifer</a> created a new proposal
+      <div class="content">
+        <div class="date">
+          {{date}}
+        </div>
+        <div class="summary">
+          {{subject}}
+        </div>
       </div>
     </div>
-  </div>
+  {{/each}}
 </div>
 
 <div class="ui feed segment">
   <h2 class="ui header">Needs Action</h2>
 
-  <div class="event">
-    <div class="label">
-      <img src="http://placehold.it/45x45">
-    </div>
-    <div class="content">
-      <div class="date">
-        Yesterday
+  {{#each model}}
+    <div class="event">
+      <div class="label">
+        <img src="http://placehold.it/45x45">
       </div>
-      <div class="summary">
-         <a>Margaret's</a> proposal is pending approval
-      </div>
-    </div>
-  </div>
-
-  <div class="event">
-    <div class="label">
-      <img src="http://placehold.it/45x45">
-    </div>
-    <div class="content">
-      <div class="date">
-        An hour ago
-      </div>
-      <div class="summary">
-         <a>Isabelle's</a> project is complete
+      <div class="content">
+        <div class="date">
+          {{date}}
+        </div>
+        <div class="summary">
+          {{subject}}
+        </div>
       </div>
     </div>
-  </div>
+  {{/each}}
 </div>
