@@ -1,0 +1,27 @@
+<div class="ui huge breadcrumb">
+  {{#link-to "committee.messages" class="section"}}Messages{{/link-to}}
+</div>
+
+<div class="ui divider"></div>
+
+<div class="ui segment">
+  <table class="ui padded table segment">
+    <thead>
+      <tr>
+        <th>From</th>
+        <th>Subject</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each model}}
+        <tr>
+          <td>{{from}}</td>
+          <td><a href="/admin/messages/1">{{subject}}</a></td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  {{outlet}}
+  
+</div>

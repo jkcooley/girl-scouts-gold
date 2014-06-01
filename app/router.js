@@ -6,13 +6,13 @@ Router.map(function() {
   //Super Admins
   this.resource('admin', function(){
     //Projects
-    this.resource('projects', function(){
+    this.resource('admin.projects', {path: '/projects'}, function(){
       this.route('project', {path: '/:post_id'});
     });
     //Users
-    this.resource('users');
+    this.resource('admin.users', {path: '/users'});
     //Messages
-    this.resource('messages', function(){
+    this.resource('admin.messages', {path: '/messages'}, function(){
     	this.route('message', {path: ':message_id'});
     });
   });
@@ -20,11 +20,11 @@ Router.map(function() {
   //Committee Members
   this.resource('committee', function(){
     //Projects
-    this.resource('projects', function(){
+    this.resource('committee.projects', {path: '/projects'}, function(){
       this.route('project', {path: '/:post_id'});
     });
     //Messages
-    this.resource('messages', function(){
+    this.resource('committee.messages', {path: '/messages'}, function(){
       this.route('message', {path: ':message_id'});
     });
   });
