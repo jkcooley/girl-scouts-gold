@@ -13,14 +13,12 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Olivia</td>
-        <td><a href="/admin/messages/1">Subject</a></td>
-      </tr>
-      <tr>
-        <td>Jamie</td>
-        <td><a href="/admin/messages/2">Subject</a></td>
-      </tr>
+      {{#each model}}
+        <tr>
+          <td>{{from}}</td>
+          <td><a href="/admin/messages/1">{{subject}}</a></td>
+        </tr>
+      {{/each}}
     </tbody>
   </table>
 
