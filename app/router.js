@@ -31,7 +31,11 @@ Router.map(function() {
 
   //Users
   this.resource('user', function(){
-    
+      this.route('login');
+      this.route('to-dos');
+      this.route('messages');
+      this.route('info');
+
   });
 });
 
