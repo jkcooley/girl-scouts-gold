@@ -1,3 +1,31 @@
-html, body {
-  margin: 20px;
+html {
+	background-color: #EEE;
+}
+
+body {
+  font-family: 'Arial';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro';
+}
+
+/* Overrides */
+.ui.secondary.menu .item > .input input {
+	background-color: white;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.container {
+	margin: 0 20px;
+}
+
+/* Admin page */
+.admin-page .feed .header {
+	color: #4A4A4A;
+	font-weight: lighter;
+}
+
+.ui.breadcrumb {
+	font-family: 'Source Sans Pro';
 }
