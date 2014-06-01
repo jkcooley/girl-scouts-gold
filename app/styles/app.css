@@ -19,3 +19,13 @@ h1, h2, h3, h4, h5, h6 {
 .container {
 	margin: 0 20px;
 }
+
+/* Admin page */
+.admin-page .feed .header {
+	color: #4A4A4A;
+	font-weight: lighter;
+}
+
+.ui.breadcrumb {
+	font-family: 'Source Sans Pro';
+}

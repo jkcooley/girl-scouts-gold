@@ -1,4 +1,6 @@
-<h2 class="ui header">Projects</h2>
+<div class="ui huge breadcrumb">
+  {{#link-to "projects" class="section"}}Projects{{/link-to}}
+</div>
 
 <div class="ui secondary menu">
   <a class="active item">All Projects</a>
@@ -20,7 +22,7 @@
 
 <div class="ui stackable items">
 
-  <div class="item">
+  {{#link-to "projects.project" 1 class="item" tagName="div"}}
     <div class="image">
       <img src="http://placehold.it/300x200">
       <div class="ui right red corner label">
@@ -31,9 +33,9 @@
       <div class="name">Project 1</div>
       <p class="description">Twas brillig and the slithy toves did gyre and gimble in the wabe.</p>
     </div>
-  </div>
+  {{/link-to}}
 
-  <div class="item">
+  {{#link-to "projects.project" 1 class="item" tagName="div"}}
     <div class="image">
       <img src="http://placehold.it/300x200">
     </div>
@@ -41,9 +43,9 @@
       <div class="name">Project 2</div>
       <p class="description">All mimsy were the borogroves and the mome raths outgrabe.</p>
     </div>
-  </div>
+  {{/link-to}}
 
-  <div class="item">
+  {{#link-to "projects.project" 1 class="item" tagName="div"}}
     <div class="image">
       <img src="http://placehold.it/300x200">
     </div>
@@ -51,9 +53,9 @@
       <div class="name">Project 3</div>
       <p class="description">Beware the Jabberwock my son, the jaws that bite, the claws that catch.</p>
     </div>
-  </div>
+  {{/link-to}}
 
-  <div class="item">
+  {{#link-to "projects.project" 1 class="item" tagName="div"}}
     <div class="image">
       <img src="http://placehold.it/300x200">
     </div>
@@ -61,6 +63,6 @@
       <div class="name">Project 4</div>
       <p class="description">Beware the Jubjub bird and shun, the frumious Bandersnatch.</p>
     </div>
-  </div>
+  {{/link-to}}
 
 </div>

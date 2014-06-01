@@ -1,9 +1,9 @@
 <div class="admin-page">
   <div class="ui menu">
-    <a class="active item" href="/admin">Home</a>
-    <a class="item" href="/admin/projects">Projects</a>
-    <a class="item" href="/admin/users">Users</a>
-    <a class="item" href="/admin/messages">Messages</a>
+  	{{#link-to "admin"    class="item"}}Home{{/link-to}}
+  	{{#link-to "projects" class="item"}}Projects{{/link-to}}
+  	{{#link-to "users"    class="item"}}Users{{/link-to}}
+  	{{#link-to "messages" class="item"}}Messages{{/link-to}}
   </div>
 
   <div class="container">
