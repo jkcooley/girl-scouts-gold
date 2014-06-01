@@ -1,3 +1,24 @@
 <div class="user-page">
-	{{outlet}}
+  <div class="ui menu">
+    <a class="active item" href="user">
+      <i class="home icon"></i> Home
+    </a>
+    <a class="item" href="user/submit">
+      <img src="images/upload-02.png" height="35px"> Submit
+    </a>
+    <a class="item" href="user/to-dos">
+      <img src="images/to-do.png" height="35px"> To-Dos
+    </a> 
+    <a class="item" href="user/messages">
+      <img src="images/messages.png" height="35px"> Messages
+    </a>
+     <a class="item" href="user/calendar">
+      <img src="images/calendar.png" height="35px"> Calendar
+    </a>
+    <a class="item" href="user/login">
+      Login
+    </a>
+  </div>
+  
+  {{outlet}}
 </div>

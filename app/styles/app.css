@@ -1,11 +1,19 @@
 html {
-  background-color: #EEE;
   margin: 0;
   padding: 0;
 }
 
 body {
   font-family: 'Arial';
+  background-color: rgb(250, 248, 236);
+  color: #4a4a4a;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+img{
+  max-width: 300px;
+  max-height: 200px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,13 +33,8 @@ a:visited, a:active {
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.container {
-  margin: 0 20px;
-}
-
 /* Admin page */
-.admin-page .feed .header {
-  color: #4A4A4A;
+.ui.header {
   font-weight: lighter;
 }
 
@@ -41,24 +44,15 @@ a:visited, a:active {
 
 
 /* User page */
-.user-page h1, h2, h3, h4, h5, h6 {
-  font-family: 'Coming Soon';
+.user-page h1,
+.user-page h2,
+.user-page h3,
+.user-page h4,
+.user-page h5,
+.user-page h6 {
+  text-align: center;
 }
 
-.user-page h2 {
-  text-align: center;
-}
-.user-page h3 {
-  text-align: center;
-}
-.user-page h4 {
-  text-align: center;
-}
-.user-page { 
- background-color: #fdf2a4;
- color: #4a4a4a;
- font-family: "Coming Soon" 
-}
 .user-page .ui.button {
   color: #339900;
 }
