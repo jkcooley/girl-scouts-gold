@@ -8,6 +8,9 @@ var FIXTURES = [
   }, {
     id: 3,
     name: 'Christine'
+  }, {
+    id: 4,
+    name: 'JosieKate'
   }
 ];
 

@@ -21,48 +21,18 @@
 
 
 <div class="ui stackable items">
-
-  {{#link-to "projects.project" 1 class="item" tagName="div"}}
-    <div class="image">
-      <img src="http://placehold.it/300x200">
-      <div class="ui right red corner label">
-        <div class="text">New</div>
+  {{#each model}}
+    {{#link-to "projects.project" this class="item" tagName="div"}}
+      <div class="image">
+        <img src="http://placehold.it/300x200">
+        <div class="ui right red corner label">
+          <div class="text">New</div>
+        </div>
       </div>
-    </div>
-    <div class="content">
-      <div class="name">Project 1</div>
-      <p class="description">Twas brillig and the slithy toves did gyre and gimble in the wabe.</p>
-    </div>
-  {{/link-to}}
-
-  {{#link-to "projects.project" 1 class="item" tagName="div"}}
-    <div class="image">
-      <img src="http://placehold.it/300x200">
-    </div>
-    <div class="content">
-      <div class="name">Project 2</div>
-      <p class="description">All mimsy were the borogroves and the mome raths outgrabe.</p>
-    </div>
-  {{/link-to}}
-
-  {{#link-to "projects.project" 1 class="item" tagName="div"}}
-    <div class="image">
-      <img src="http://placehold.it/300x200">
-    </div>
-    <div class="content">
-      <div class="name">Project 3</div>
-      <p class="description">Beware the Jabberwock my son, the jaws that bite, the claws that catch.</p>
-    </div>
-  {{/link-to}}
-
-  {{#link-to "projects.project" 1 class="item" tagName="div"}}
-    <div class="image">
-      <img src="http://placehold.it/300x200">
-    </div>
-    <div class="content">
-      <div class="name">Project 4</div>
-      <p class="description">Beware the Jubjub bird and shun, the frumious Bandersnatch.</p>
-    </div>
-  {{/link-to}}
-
+      <div class="content">
+        <div class="name">{{name}}</div>
+        <p class="description">{{description}}</p>
+      </div>
+    {{/link-to}}
+  {{/each}}
 </div>
