@@ -29,15 +29,12 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Olivia</td>
-      <td>Approved</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Jamie</td>
-      <td>Approved</td>
-      <td></td>
-    </tr>
+    {{#each model}}
+      <tr>
+        <td>{{name}}</td>
+        <td>Approved</td>
+        <td></td>
+      </tr>
+    {{/each}}
   </tbody>
 </table>

@@ -1,5 +1,7 @@
 html {
-	background-color: #EEE;
+  background-color: #EEE;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -10,22 +12,53 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Source Sans Pro';
 }
 
+a, a:visited {
+  color: rgb(0, 159, 218);
+}
+a:visited, a:active {
+  text-decoration: none;
+}
+
 /* Overrides */
 .ui.secondary.menu .item > .input input {
-	background-color: white;
-	border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .container {
-	margin: 0 20px;
+  margin: 0 20px;
 }
 
 /* Admin page */
 .admin-page .feed .header {
-	color: #4A4A4A;
-	font-weight: lighter;
+  color: #4A4A4A;
+  font-weight: lighter;
 }
 
 .ui.breadcrumb {
-	font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro';
+}
+
+
+/* User page */
+.user-page h1, h2, h3, h4, h5, h6 {
+  font-family: 'Coming Soon';
+}
+
+.user-page h2 {
+  text-align: center;
+}
+.user-page h3 {
+  text-align: center;
+}
+.user-page h4 {
+  text-align: center;
+}
+.user-page { 
+ background-color: #fdf2a4;
+ color: #4a4a4a;
+ font-family: "Coming Soon" 
+}
+.user-page .ui.button {
+  color: #339900;
 }
